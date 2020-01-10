@@ -1,0 +1,21 @@
+{
+  "name": "react-animated-heart",
+  "version": "0.0.1",
+  "description": "Simple Twitter-like animated heart",
+  "main": "index.js",
+  "repository": "git@github.com:ShaunLWM/react-animated-heart.git",
+  "author": "ShaunLWM",
+  "license": "MIT",
+  "keywords": [
+    "twitter-heart",
+    "twitter-animated-heart",
+    "like button",
+    "heart button",
+    "heart",
+    "exploding button"
+  ],
+  "dependencies": {
+    "react": "16.12.0",
+    "styled-components": "4.4.1"
+  }
+}
