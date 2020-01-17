@@ -1,6 +1,6 @@
 {
   "name": "react-animated-heart",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple Twitter-like animated heart",
   "main": "dist/index.js",
   "private": false,
