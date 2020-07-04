@@ -13,7 +13,7 @@ export default function Heart({
   isClick,
   onClick
 }) {
-  return React.createElement(HeartUI, {
+  return /*#__PURE__*/React.createElement(HeartUI, {
     isClick: isClick,
     onClick: onClick
   });
