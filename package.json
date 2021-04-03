@@ -16,10 +16,10 @@
 		"exploding button"
 	],
 	"dependencies": {
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-scripts": "3.4.1",
-		"styled-components": "^5.1.1"
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "4.0.3",
+		"styled-components": "^5.2.3"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -44,8 +44,8 @@
 		]
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.10.4",
-		"@babel/preset-react": "^7.10.4"
+		"@babel/cli": "^7.13.14",
+		"@babel/preset-react": "^7.13.13"
 	},
 	"babel": {
 		"presets": [
