@@ -11,6 +11,6 @@ const HeartUI = styled.div`
 	${({ isClick }) => isClick && `background-position: -2799px 2px;transition: background 1s steps(28);`}
 `;
 
-export default function Heart({ isClick, onClick }) {
-	return <HeartUI isClick={isClick} onClick={onClick} />;
+export default function Heart({ isClick, onClick, styles }) {
+	return <HeartUI isClick={isClick} onClick={onClick} styles={styles} />;
 }
