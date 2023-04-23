@@ -1,9 +1,15 @@
-import React from "react";
+import { createElement } from "react";
 import { setup, styled } from "goober";
 
-setup(React.createElement);
+setup(createElement);
 
-const HeartUI = styled('div')(({ isClick, styles }) => [
+export interface HeartProp {
+	isClick: boolean;
+	styles?: any;
+	onClick: () => void;
+}
+
+const HeartUI = (styled('div') as any)(({ isClick, styles }: Partial<HeartProp>) => [
 	{
 		width: '100px',
 		height: '100px',
@@ -18,6 +24,6 @@ const HeartUI = styled('div')(({ isClick, styles }) => [
 	styles
 ]);
 
-export default function Heart({ isClick, onClick, styles }) {
+export default function Heart({ isClick, onClick, styles }: HeartProp) {
 	return <HeartUI isClick={isClick} onClick={onClick} styles={styles} />;
 }

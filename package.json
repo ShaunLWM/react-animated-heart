@@ -1,8 +1,13 @@
 {
 	"name": "react-animated-heart",
-	"version": "0.0.7",
+	"version": "0.0.8-beta.6",
 	"description": "Simple Twitter-like animated heart",
-	"main": "dist/index.js",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"files": [
+		"dist"
+	],
+	"types": "dist/index.d.ts",
 	"private": false,
 	"repository": "git@github.com:ShaunLWM/react-animated-heart.git",
 	"author": "ShaunLWM",
@@ -16,40 +21,22 @@
 		"exploding button"
 	],
 	"dependencies": {
-		"goober": "^2.1.9",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"react-scripts": "4.0.3"
+		"goober": "^2.1.13",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^4.7.4"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"publish:npm": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
+		"rollup": "rollup -c",
+		"prepublishOnly": "npm run rollup"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.13.14",
-		"@babel/preset-react": "^7.13.13"
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-react"
-		]
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-node-resolve": "^13.0.6",
+		"@rollup/plugin-typescript": "^8.3.0",
+		"@types/react": "^18.0.38",
+		"rollup": "^2.60.0",
+		"rollup-plugin-dts": "^4.0.1",
+		"tslib": "^2.5.0"
 	}
 }
